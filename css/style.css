@@ -2,7 +2,7 @@ body{
   margin: auto;
   /* width: 100%;
   height: 100%; */
-  overflow: hidden;
+  overflow-y: scroll;
   color: #fff;
   font-family:sans-serif;
   text-align:center;
@@ -11,38 +11,41 @@ body{
   background-image: linear-gradient(45deg, #061c38 0%,#0e6e87 34%,#1aae7c 63%,#1aae7c 63%,#99e43a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-attachment: fixed;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .calculator-body{
   display: grid;
   justify-content: center;
   align-content: center;
-  margin: 100px 0 ;
+  margin: 8% 0 ;
 
 }
 button{
   color:#fff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight:700;
   font-family:sans-serif;
   outline: none;
 }
 .result-screen{
-/* margin-top: 100px; */
 max-width: 345px;
+margin:auto;
 }
 .previous-result{
   height: 30px;
   background-color: #2f2f2f;
   text-align: right;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #a1a1a1;
   border-radius: 10px 10px 0 0;
 }
 .current-result{
   text-align: right;
   padding: 10px;
-  font-size: 40px;
-  min-height: 65px;
+  font-size: 30px;
+  min-height: 55px;
   background-color: #292929;
 }
 .keys{
@@ -53,10 +56,11 @@ border-radius: 0 0 10px 10px;
 .key{
   margin: 2px 0 2px 0;
   width: 80px;
-  height: 60px;
+  height: 50px;
   background: rgba(33,201,183,0.6);
   border-radius: 5px;
   border: 0px;
+  cursor: pointer;
 
 }
 button:hover {
@@ -66,6 +70,7 @@ button:hover {
 button:active{
   background: rgba(0,0,0,0.6);
   color: #fff;
+  font-size: 18px;
 }
 .double-key{
   width: 165px;
