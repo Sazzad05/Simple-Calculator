@@ -70,7 +70,6 @@ button:hover {
 button:active{
   background: rgba(0,0,0,0.6);
   color: #fff;
-  font-size: 18px;
 }
 .double-key{
   width: 165px;
